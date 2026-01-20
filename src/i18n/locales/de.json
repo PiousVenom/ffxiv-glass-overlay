@@ -1,0 +1,194 @@
+{
+  "header": {
+    "waiting": "Warte auf Kampfdaten...",
+    "rdps": "rDPS",
+    "rhps": "rHPS",
+    "rtps": "rTPS"
+  },
+  "footer": {
+    "dps": "DPS",
+    "heal": "Heilung",
+    "tank": "Tank",
+    "raid": "Raid",
+    "aggro": "Aggro",
+    "charts": "Diagramme",
+    "clearDisplay": "Anzeige löschen",
+    "settings": "Einstellungen",
+    "collapse": "Einklappen",
+    "expand": "Ausklappen",
+    "history": "Verlauf"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "reset": "Zurücksetzen",
+    "resetWindowSize": "Fenster auf Standardgröße zurücksetzen",
+    "timerHint": "Zauber-Timer verfolgen wichtige Abklingzeiten wie Battle Litany, Technical Step und Tank-Mitigationen. Timer erscheinen unter der Spielerliste, wenn Fähigkeiten im Kampf verwendet werden. Erfordert ACT OverlayPlugin mit aktivierter LogLine-Subscription.",
+    "tabs": {
+      "general": "Allgemein",
+      "dps": "DPS",
+      "heal": "Heilung",
+      "tank": "Tank",
+      "alerts": "Warnungen",
+      "timers": "Timer"
+    },
+    "groups": {
+      "playerIdentity": "Spieleridentität",
+      "appearance": "Aussehen",
+      "display": "Anzeige",
+      "behavior": "Verhalten",
+      "numberFormatting": "Zahlenformat",
+      "columns": "Spalten",
+      "alertSettings": "Warnungseinstellungen",
+      "timerSettings": "Timer-Einstellungen",
+      "historySettings": "Verlaufseinstellungen"
+    },
+    "labels": {
+      "yourName": "Dein Name",
+      "autoDetectName": "Name automatisch erkennen",
+      "detected": "Erkannt",
+      "theme": "Design",
+      "opacity": "Deckkraft",
+      "language": "Sprache",
+      "showJobIcons": "Job-Symbole anzeigen",
+      "nameFormat": "Namensformat",
+      "blurNames": "Namen unscharf",
+      "layout": "Layout",
+      "footerPosition": "Fußzeilen-Position",
+      "allowCollapse": "Einklappen erlauben",
+      "decimalPrecision": "Dezimalgenauigkeit",
+      "thousandSeparator": "Tausendertrennzeichen",
+      "compactNumbers": "Kompakte Zahlen",
+      "dmgPercent": "Schaden %",
+      "healPercent": "Heilung %",
+      "critPercent": "Kritisch %",
+      "directHitPercent": "Direkter Treffer %",
+      "critDirectHitPercent": "Krit+DT %",
+      "maxHit": "Max Treffer",
+      "maxHeal": "Max Heilung",
+      "deaths": "Tode",
+      "overhealPercent": "Überheilung %",
+      "effectiveHPS": "Effektive HPS %",
+      "last30s": "Letzte 30s",
+      "last60s": "Letzte 60s",
+      "enableAlerts": "Warnungen aktivieren",
+      "alertCooldown": "Warnungs-Abklingzeit (Sekunden)",
+      "enableTimers": "Timer aktivieren",
+      "showOwnCooldowns": "Eigene Abklingzeiten anzeigen",
+      "showPartyCooldowns": "Gruppen-Abklingzeiten anzeigen",
+      "enableHistory": "Verlauf aktivieren",
+      "maxHistoryEntries": "Max. Verlaufseinträge",
+      "autoSaveOnZoneChange": "Automatisch bei Zonenwechsel speichern"
+    },
+    "options": {
+      "themes": {
+        "default": "Standard",
+        "dark": "Dunkel",
+        "light": "Hell"
+      },
+      "nameFormats": {
+        "none": "Vollständiger Name",
+        "first": "Vorname",
+        "last": "Nachname",
+        "initials": "Initialen"
+      },
+      "blurModes": {
+        "none": "Keine Unschärfe",
+        "all": "Alle Namen unscharf",
+        "others": "Nur andere unscharf"
+      },
+      "layouts": {
+        "vertical": "Vertikal",
+        "horizontal": "Horizontal"
+      },
+      "footerPositions": {
+        "bottom": "Unten",
+        "top": "Oben"
+      },
+      "languages": {
+        "en": "Englisch",
+        "ja": "Japanisch",
+        "de": "Deutsch",
+        "fr": "Französisch"
+      }
+    },
+    "hints": {
+      "compactNumbers": "z.B. 32.388 → 32k"
+    }
+  },
+  "playerDetail": {
+    "title": "Spielerdetails",
+    "stats": {
+      "damage": "Gesamtschaden",
+      "dps": "DPS",
+      "healing": "Gesamtheilung",
+      "hps": "HPS",
+      "damageTaken": "Erlittener Schaden",
+      "deaths": "Tode",
+      "critPercent": "Kritisch %",
+      "directHitPercent": "Direkter Treffer %",
+      "critDirectHitPercent": "Krit+DT %",
+      "overheal": "Überheilung",
+      "overhealPercent": "Überheilung %",
+      "maxHit": "Max Treffer",
+      "maxHeal": "Max Heilung"
+    },
+    "charts": {
+      "dpsOverTime": "DPS im Zeitverlauf",
+      "hpsOverTime": "HPS im Zeitverlauf"
+    }
+  },
+  "history": {
+    "title": "Kampfverlauf",
+    "noHistory": "Noch kein Kampfverlauf",
+    "loadEncounter": "Laden",
+    "deleteEncounter": "Löschen",
+    "saveCurrent": "Aktuellen Kampf speichern",
+    "clearAll": "Gesamten Verlauf löschen",
+    "duration": "Dauer",
+    "zone": "Zone"
+  },
+  "aggro": {
+    "title": "Aggroliste",
+    "noTarget": "Kein Ziel",
+    "you": "DU"
+  },
+  "alerts": {
+    "title": "Warnungsauslöser",
+    "noTriggers": "Keine Warnungsauslöser konfiguriert",
+    "addTrigger": "Auslöser hinzufügen",
+    "noMessage": "(keine Nachricht)",
+    "edit": "Bearbeiten",
+    "player": "Spieler",
+    "playerSelf": "Selbst",
+    "playerAny": "Jeder Spieler",
+    "ttsMessage": "TTS-Nachricht",
+    "ttsMessagePlaceholder": "Warnungsnachricht...",
+    "useTTS": "TTS verwenden",
+    "soundFile": "Sounddatei (optional)",
+    "soundFilePlaceholder": "Pfad zur .wav-Datei...",
+    "useSound": "Sound verwenden",
+    "triggerTypes": {
+      "dps_threshold": "DPS-Schwellenwert",
+      "hps_threshold": "HPS-Schwellenwert",
+      "death": "Spielertod",
+      "aggro_warning": "Aggro-Warnung",
+      "encounter_start": "Kampfbeginn",
+      "encounter_end": "Kampfende"
+    }
+  },
+  "timers": {
+    "title": "Zauber-Timer",
+    "noActiveTimers": "Keine aktiven Abklingzeiten"
+  },
+  "collapsed": {
+    "label": "Overlay eingeklappt"
+  },
+  "common": {
+    "close": "Schließen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "enabled": "Aktiviert",
+    "disabled": "Deaktiviert"
+  }
+}

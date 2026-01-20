@@ -1,0 +1,17 @@
+/* TimerSettingsTab styles - composes from parent Settings module */
+
+.settingGroup {
+  composes: settingGroup from '../Settings.module.css';
+}
+
+.settingGroupLabel {
+  composes: settingGroupLabel from '../Settings.module.css';
+}
+
+.settingItem {
+  composes: settingItem from '../Settings.module.css';
+}
+
+.settingHint {
+  composes: settingHint from '../Settings.module.css';
+}

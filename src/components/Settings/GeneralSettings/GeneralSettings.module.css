@@ -1,0 +1,41 @@
+/* GeneralSettings styles - composes from parent Settings module */
+
+.settingGroup {
+  composes: settingGroup from '../Settings.module.css';
+}
+
+.settingGroupLabel {
+  composes: settingGroupLabel from '../Settings.module.css';
+}
+
+.settingItem {
+  composes: settingItem from '../Settings.module.css';
+}
+
+.settingItemHint {
+  composes: settingItemHint from '../Settings.module.css';
+}
+
+.detectedName {
+  composes: detectedName from '../Settings.module.css';
+}
+
+.sliderInput {
+  composes: sliderInput from '../Settings.module.css';
+}
+
+.sliderValue {
+  composes: sliderValue from '../Settings.module.css';
+}
+
+.numberInput {
+  composes: numberInput from '../Settings.module.css';
+}
+
+.numberValue {
+  composes: numberValue from '../Settings.module.css';
+}
+
+.hintText {
+  composes: hintText from '../Settings.module.css';
+}

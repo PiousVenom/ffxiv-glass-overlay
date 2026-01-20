@@ -1,0 +1,116 @@
+/* =============================================
+   Charts Window Styles (separate window)
+   ============================================= */
+.chartsWindowContainer {
+  min-height: 100vh;
+  position: relative;
+}
+
+.chartsPanel {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: rgba(8, 8, 15, 0.98);
+}
+
+.chartsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-glass);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+}
+
+.closeCharts {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  padding: var(--spacing-xs);
+  line-height: 1;
+  border-radius: var(--border-radius-xs);
+  transition: all 0.2s ease;
+}
+
+.closeCharts:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chartsPlayerSelect {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.chartsPlayerSelect label {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.noPlayers {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+.chartsContent {
+  flex: 1;
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.chartsContent :global(.chart-container) {
+  height: 180px;
+}
+
+.chartsEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+/* Theme overrides - use :global for class added to container by JS */
+:global(.charts-window-container.theme-dark) .chartsPanel {
+  background: #1a1a24;
+}
+
+:global(.charts-window-container.theme-light) .chartsPanel {
+  background: #ffffff;
+}
+
+:global(.charts-window-container.theme-light) .chartsHeader {
+  color: rgba(0, 0, 0, 0.87);
+  background: rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+:global(.charts-window-container.theme-light) .chartsPlayerSelect {
+  background: rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+:global(.charts-window-container.theme-light) .chartsPlayerSelect label {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+:global(.charts-window-container.theme-light) .closeCharts {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+:global(.charts-window-container.theme-light) .closeCharts:hover {
+  color: rgba(0, 0, 0, 0.87);
+  background: rgba(0, 0, 0, 0.05);
+}

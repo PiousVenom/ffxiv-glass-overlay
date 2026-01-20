@@ -1,0 +1,102 @@
+/* =============================================
+   Player List Component Styles
+   ============================================= */
+.playerList {
+  padding: var(--spacing-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.08) 100%);
+}
+
+.playerList::-webkit-scrollbar {
+  width: 4px;
+}
+
+.playerList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.playerList::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 2px;
+}
+
+/* Player List Header */
+.playerListHeader {
+  display: grid;
+  grid-template-columns: 16px 18px 1fr auto;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 6px;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-tertiary);
+  border-bottom: 1px solid var(--border-glass);
+  margin-bottom: 2px;
+}
+
+.headerName {
+  min-width: 60px;
+}
+
+.headerStats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerPrimary,
+.headerStat {
+  min-width: 38px;
+  text-align: right;
+}
+
+/* No Data State */
+.noData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  color: var(--text-tertiary);
+  text-align: center;
+  min-height: 100px;
+}
+
+.noDataTitle {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px var(--accent-glow));
+}
+
+.hint {
+  font-size: var(--font-size-xs);
+  margin-top: var(--spacing-xs);
+}
+
+/* Horizontal Layout */
+:global(.overlay-container.layout-horizontal) .playerList {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+:global(.overlay-container.layout-horizontal) .playerListHeader {
+  display: none;
+}
+
+/* Theme overrides */
+:global(.overlay-container.theme-light) .playerList::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.4);
+}

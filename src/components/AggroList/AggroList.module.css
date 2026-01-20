@@ -1,0 +1,179 @@
+/* =============================================
+   Aggro/Enmity List Styles
+   ============================================= */
+.aggroList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.aggroTarget {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.targetHpBar {
+  position: relative;
+  height: 24px;
+  background: var(--bg-glass);
+  border-radius: var(--border-radius-xs);
+  overflow: hidden;
+}
+
+.targetHpFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #e74c3c 0%, #c0392b 100%);
+  transition: width 0.3s ease;
+}
+
+.targetHpText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-primary);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.targetName {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.targetHp {
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.aggroEntries {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-xs) 0;
+}
+
+.aggroEntry {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-md);
+  height: 26px;
+}
+
+.aggroEntryIsYou {
+  composes: aggroEntry;
+  background: rgba(179, 102, 255, 0.1);
+}
+
+.aggroEntryHasAggro {
+  composes: aggroEntry;
+}
+
+.aggroEntryIsYouHasAggro {
+  composes: aggroEntryIsYou;
+}
+
+.enmityBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0.3;
+  transition: width 0.3s ease;
+}
+
+.enmityBarHasAggro {
+  composes: enmityBar;
+  opacity: 0.5;
+}
+
+.aggroRank {
+  width: 20px;
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  text-align: center;
+  z-index: 1;
+}
+
+.aggroRankHasAggro {
+  composes: aggroRank;
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.jobIcon {
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.aggroName {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 1;
+}
+
+.aggroNameIsYou {
+  composes: aggroName;
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+.aggroEnmity {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+  z-index: 1;
+}
+
+.aggroEnmityHasAggro {
+  composes: aggroEnmity;
+  color: #e74c3c;
+}
+
+.noData {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+/* Theme overrides */
+:global(.overlay-container.theme-light) .targetHpText {
+  color: white;
+}
+
+:global(.overlay-container.theme-light) .aggroName {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+:global(.overlay-container.theme-light) .aggroNameIsYou {
+  color: #7c3aed;
+}
+
+:global(.overlay-container.theme-light) .aggroEnmity {
+  color: rgba(0, 0, 0, 0.6);
+}

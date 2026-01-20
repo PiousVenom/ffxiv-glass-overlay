@@ -1,0 +1,337 @@
+/* =============================================
+   Player Row Component Styles
+   ============================================= */
+.playerRow {
+  display: grid;
+  grid-template-columns: 16px 18px 1fr auto;
+  align-items: center;
+  gap: 6px;
+  min-height: 26px;
+  padding: var(--spacing-xs) 6px;
+  background: var(--bg-glass);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--border-glass);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.playerRow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  border-radius: var(--border-radius-sm);
+}
+
+.playerRow:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-glass-strong);
+  transform: translateY(-1px);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.isYou {
+  composes: playerRow;
+  background: rgba(179, 102, 255, 0.2);
+  border-color: var(--border-accent);
+  box-shadow:
+    0 2px 12px rgba(179, 102, 255, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* DPS Bar */
+.dpsBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0.3;
+  border-radius: var(--border-radius-sm);
+}
+
+/* Player Rank */
+.playerRank {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.rankGold {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.rankSilver {
+  color: #c0c0c0;
+  text-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
+}
+
+.rankBronze {
+  color: #cd7f32;
+  text-shadow: 0 0 10px rgba(205, 127, 50, 0.5);
+}
+
+/* Job Icon */
+.jobIcon {
+  width: 16px;
+  height: 16px;
+  border-radius: var(--border-radius-xs);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Player Name */
+.playerName {
+  min-width: 60px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+
+.playerNameYou {
+  composes: playerName;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+/* Stats Container */
+.playerStats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.statPrimary {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+  min-width: 38px;
+  text-align: right;
+}
+
+.statValue {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+  min-width: 38px;
+  text-align: right;
+}
+
+/* Clickable player row */
+.clickable {
+  cursor: pointer;
+}
+
+/* Horizontal Layout */
+:global(.overlay-container.layout-horizontal) .playerRow,
+:global(.overlay-container.layout-horizontal) .isYou {
+  flex: 1 1 calc(50% - var(--spacing-sm));
+  min-width: 140px;
+}
+
+/* Blur Text Effect */
+.blurText {
+  filter: blur(4px);
+}
+
+.playerRow:hover .blurText,
+.isYou:hover .blurText {
+  filter: blur(2px);
+}
+
+/* =============================================
+   Job-specific bar colors (using data attributes)
+   ============================================= */
+.playerRow[data-job='PLD'] .dpsBar,
+.isYou[data-job='PLD'] .dpsBar {
+  background: var(--job-pld);
+}
+.playerRow[data-job='WAR'] .dpsBar,
+.isYou[data-job='WAR'] .dpsBar {
+  background: var(--job-war);
+}
+.playerRow[data-job='DRK'] .dpsBar,
+.isYou[data-job='DRK'] .dpsBar {
+  background: var(--job-drk);
+}
+.playerRow[data-job='GNB'] .dpsBar,
+.isYou[data-job='GNB'] .dpsBar {
+  background: var(--job-gnb);
+}
+.playerRow[data-job='WHM'] .dpsBar,
+.isYou[data-job='WHM'] .dpsBar {
+  background: var(--job-whm);
+}
+.playerRow[data-job='SCH'] .dpsBar,
+.isYou[data-job='SCH'] .dpsBar {
+  background: var(--job-sch);
+}
+.playerRow[data-job='AST'] .dpsBar,
+.isYou[data-job='AST'] .dpsBar {
+  background: var(--job-ast);
+}
+.playerRow[data-job='SGE'] .dpsBar,
+.isYou[data-job='SGE'] .dpsBar {
+  background: var(--job-sge);
+}
+.playerRow[data-job='MNK'] .dpsBar,
+.isYou[data-job='MNK'] .dpsBar {
+  background: var(--job-mnk);
+}
+.playerRow[data-job='DRG'] .dpsBar,
+.isYou[data-job='DRG'] .dpsBar {
+  background: var(--job-drg);
+}
+.playerRow[data-job='NIN'] .dpsBar,
+.isYou[data-job='NIN'] .dpsBar {
+  background: var(--job-nin);
+}
+.playerRow[data-job='SAM'] .dpsBar,
+.isYou[data-job='SAM'] .dpsBar {
+  background: var(--job-sam);
+}
+.playerRow[data-job='RPR'] .dpsBar,
+.isYou[data-job='RPR'] .dpsBar {
+  background: var(--job-rpr);
+}
+.playerRow[data-job='VPR'] .dpsBar,
+.isYou[data-job='VPR'] .dpsBar {
+  background: var(--job-vpr);
+}
+.playerRow[data-job='BRD'] .dpsBar,
+.isYou[data-job='BRD'] .dpsBar {
+  background: var(--job-brd);
+}
+.playerRow[data-job='MCH'] .dpsBar,
+.isYou[data-job='MCH'] .dpsBar {
+  background: var(--job-mch);
+}
+.playerRow[data-job='DNC'] .dpsBar,
+.isYou[data-job='DNC'] .dpsBar {
+  background: var(--job-dnc);
+}
+.playerRow[data-job='BLM'] .dpsBar,
+.isYou[data-job='BLM'] .dpsBar {
+  background: var(--job-blm);
+}
+.playerRow[data-job='SMN'] .dpsBar,
+.isYou[data-job='SMN'] .dpsBar {
+  background: var(--job-smn);
+}
+.playerRow[data-job='RDM'] .dpsBar,
+.isYou[data-job='RDM'] .dpsBar {
+  background: var(--job-rdm);
+}
+.playerRow[data-job='PCT'] .dpsBar,
+.isYou[data-job='PCT'] .dpsBar {
+  background: var(--job-pct);
+}
+
+/* Role-based fallback colors */
+.playerRow[data-role='tank'] .dpsBar,
+.isYou[data-role='tank'] .dpsBar {
+  background: var(--role-tank);
+}
+.playerRow[data-role='healer'] .dpsBar,
+.isYou[data-role='healer'] .dpsBar {
+  background: var(--role-healer);
+}
+.playerRow[data-role='dps'] .dpsBar,
+.isYou[data-role='dps'] .dpsBar {
+  background: var(--role-dps);
+}
+
+/* Theme overrides */
+:global(.overlay-container.theme-dark) .playerRow,
+:global(.overlay-container.theme-dark) .isYou {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  transition: background 0.15s ease;
+}
+
+:global(.overlay-container.theme-dark) .playerRow::before,
+:global(.overlay-container.theme-dark) .isYou::before {
+  display: none;
+}
+
+:global(.overlay-container.theme-dark) .isYou {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: var(--border-accent);
+}
+
+:global(.overlay-container.theme-dark) .rankGold,
+:global(.overlay-container.theme-dark) .rankSilver,
+:global(.overlay-container.theme-dark) .rankBronze {
+  text-shadow: none;
+}
+
+:global(.overlay-container.theme-light) .playerRow,
+:global(.overlay-container.theme-light) .isYou {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  transition: background 0.15s ease;
+}
+
+:global(.overlay-container.theme-light) .playerRow::before,
+:global(.overlay-container.theme-light) .isYou::before {
+  display: none;
+}
+
+:global(.overlay-container.theme-light) .isYou {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: var(--border-accent);
+}
+
+:global(.overlay-container.theme-light) .playerNameYou {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Light theme rank colors */
+:global(.overlay-container.theme-light) .rankGold {
+  color: #d4a017;
+  text-shadow: none;
+}
+
+:global(.overlay-container.theme-light) .rankSilver {
+  color: #71717a;
+  text-shadow: none;
+}
+
+:global(.overlay-container.theme-light) .rankBronze {
+  color: #b87333;
+  text-shadow: none;
+}

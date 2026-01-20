@@ -1,0 +1,135 @@
+/* =============================================
+   Custom Select Dropdown Styles
+   ============================================= */
+.customSelect {
+  position: relative;
+  min-width: 120px;
+  font-size: var(--font-size-sm);
+  z-index: 200;
+}
+
+.customSelectOpen {
+  composes: customSelect;
+}
+
+.selectSelected {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  padding-right: 24px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--border-radius-xs);
+  color: var(--text-primary);
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.15s ease;
+}
+
+.selectSelected::after {
+  content: '';
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid var(--text-secondary);
+  transition: transform 0.15s ease;
+}
+
+.customSelectOpen .selectSelected::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.selectSelected:hover,
+.customSelectOpen .selectSelected {
+  border-color: var(--accent-primary);
+}
+
+.selectOptions {
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: rgba(15, 12, 25, 0.98);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--border-radius-xs);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition:
+    opacity 0.15s,
+    transform 0.15s,
+    visibility 0.15s;
+  z-index: 300;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.customSelectOpen .selectOptions {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.selectOption {
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-glass);
+  transition: all 0.15s ease;
+}
+
+.selectOption:last-child {
+  border-bottom: none;
+}
+
+.selectOption:hover {
+  background: rgba(179, 102, 255, 0.15);
+  color: var(--text-primary);
+}
+
+.selectOptionSelected {
+  composes: selectOption;
+  background: rgba(179, 102, 255, 0.25);
+  color: var(--accent-primary);
+}
+
+.selectOptionFocused {
+  composes: selectOption;
+  background: rgba(179, 102, 255, 0.15);
+  color: var(--text-primary);
+}
+
+.selectOptionSelectedFocused {
+  composes: selectOptionSelected;
+  background: rgba(179, 102, 255, 0.25);
+}
+
+/* Theme overrides */
+:global(.overlay-container.theme-dark) .selectOptions {
+  background: #242430;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+}
+
+:global(.overlay-container.theme-light) .selectOptions {
+  background: #ffffff;
+  border-color: var(--border-accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+:global(.overlay-container.theme-light) .selectOption:hover {
+  background: rgba(59, 130, 246, 0.08);
+}
+
+:global(.overlay-container.theme-light) .selectOptionSelected {
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--accent-primary);
+}

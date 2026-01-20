@@ -1,0 +1,194 @@
+{
+  "header": {
+    "waiting": "En attente des données de combat...",
+    "rdps": "rDPS",
+    "rhps": "rHPS",
+    "rtps": "rTPS"
+  },
+  "footer": {
+    "dps": "DPS",
+    "heal": "Soin",
+    "tank": "Tank",
+    "raid": "Raid",
+    "aggro": "Aggro",
+    "charts": "Graphiques",
+    "clearDisplay": "Effacer l'affichage",
+    "settings": "Paramètres",
+    "collapse": "Réduire",
+    "expand": "Développer",
+    "history": "Historique"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "reset": "Réinitialiser",
+    "resetWindowSize": "Réinitialiser la fenêtre à la taille par défaut",
+    "timerHint": "Les minuteurs de sorts suivent les temps de recharge majeurs comme Battle Litany, Technical Step et les mitigations de tank. Les minuteurs apparaissent sous la liste des joueurs lorsque les compétences sont utilisées en combat. Nécessite ACT OverlayPlugin avec l'abonnement LogLine activé.",
+    "tabs": {
+      "general": "Général",
+      "dps": "DPS",
+      "heal": "Soin",
+      "tank": "Tank",
+      "alerts": "Alertes",
+      "timers": "Minuteurs"
+    },
+    "groups": {
+      "playerIdentity": "Identité du joueur",
+      "appearance": "Apparence",
+      "display": "Affichage",
+      "behavior": "Comportement",
+      "numberFormatting": "Format des nombres",
+      "columns": "Colonnes",
+      "alertSettings": "Paramètres d'alerte",
+      "timerSettings": "Paramètres des minuteurs",
+      "historySettings": "Paramètres d'historique"
+    },
+    "labels": {
+      "yourName": "Votre nom",
+      "autoDetectName": "Détection automatique du nom",
+      "detected": "Détecté",
+      "theme": "Thème",
+      "opacity": "Opacité",
+      "language": "Langue",
+      "showJobIcons": "Afficher les icônes de job",
+      "nameFormat": "Format du nom",
+      "blurNames": "Flouter les noms",
+      "layout": "Disposition",
+      "footerPosition": "Position du pied de page",
+      "allowCollapse": "Permettre la réduction",
+      "decimalPrecision": "Précision décimale",
+      "thousandSeparator": "Séparateur de milliers",
+      "compactNumbers": "Nombres compacts",
+      "dmgPercent": "Dégâts %",
+      "healPercent": "Soins %",
+      "critPercent": "Critique %",
+      "directHitPercent": "Coup direct %",
+      "critDirectHitPercent": "Crit+CD %",
+      "maxHit": "Coup max",
+      "maxHeal": "Soin max",
+      "deaths": "Morts",
+      "overhealPercent": "Sursoins %",
+      "effectiveHPS": "HPS effectif %",
+      "last30s": "30 dernières sec",
+      "last60s": "60 dernières sec",
+      "enableAlerts": "Activer les alertes",
+      "alertCooldown": "Délai d'alerte (secondes)",
+      "enableTimers": "Activer les minuteurs",
+      "showOwnCooldowns": "Afficher mes temps de recharge",
+      "showPartyCooldowns": "Afficher les temps de recharge du groupe",
+      "enableHistory": "Activer l'historique",
+      "maxHistoryEntries": "Nombre max d'entrées",
+      "autoSaveOnZoneChange": "Sauvegarde auto au changement de zone"
+    },
+    "options": {
+      "themes": {
+        "default": "Défaut",
+        "dark": "Sombre",
+        "light": "Clair"
+      },
+      "nameFormats": {
+        "none": "Nom complet",
+        "first": "Prénom",
+        "last": "Nom de famille",
+        "initials": "Initiales"
+      },
+      "blurModes": {
+        "none": "Pas de flou",
+        "all": "Flouter tous les noms",
+        "others": "Flouter les autres seulement"
+      },
+      "layouts": {
+        "vertical": "Vertical",
+        "horizontal": "Horizontal"
+      },
+      "footerPositions": {
+        "bottom": "Bas",
+        "top": "Haut"
+      },
+      "languages": {
+        "en": "Anglais",
+        "ja": "Japonais",
+        "de": "Allemand",
+        "fr": "Français"
+      }
+    },
+    "hints": {
+      "compactNumbers": "ex: 32 388 → 32k"
+    }
+  },
+  "playerDetail": {
+    "title": "Détails du joueur",
+    "stats": {
+      "damage": "Dégâts totaux",
+      "dps": "DPS",
+      "healing": "Soins totaux",
+      "hps": "HPS",
+      "damageTaken": "Dégâts subis",
+      "deaths": "Morts",
+      "critPercent": "Critique %",
+      "directHitPercent": "Coup direct %",
+      "critDirectHitPercent": "Crit+CD %",
+      "overheal": "Sursoins",
+      "overhealPercent": "Sursoins %",
+      "maxHit": "Coup max",
+      "maxHeal": "Soin max"
+    },
+    "charts": {
+      "dpsOverTime": "DPS dans le temps",
+      "hpsOverTime": "HPS dans le temps"
+    }
+  },
+  "history": {
+    "title": "Historique des combats",
+    "noHistory": "Pas encore d'historique",
+    "loadEncounter": "Charger",
+    "deleteEncounter": "Supprimer",
+    "saveCurrent": "Sauvegarder le combat actuel",
+    "clearAll": "Effacer tout l'historique",
+    "duration": "Durée",
+    "zone": "Zone"
+  },
+  "aggro": {
+    "title": "Liste d'inimitié",
+    "noTarget": "Pas de cible",
+    "you": "VOUS"
+  },
+  "alerts": {
+    "title": "Déclencheurs d'alerte",
+    "noTriggers": "Aucun déclencheur configuré",
+    "addTrigger": "Ajouter un déclencheur",
+    "noMessage": "(pas de message)",
+    "edit": "Modifier",
+    "player": "Joueur",
+    "playerSelf": "Soi-même",
+    "playerAny": "Tout joueur",
+    "ttsMessage": "Message TTS",
+    "ttsMessagePlaceholder": "Message d'alerte...",
+    "useTTS": "Utiliser TTS",
+    "soundFile": "Fichier son (optionnel)",
+    "soundFilePlaceholder": "Chemin vers le fichier .wav...",
+    "useSound": "Utiliser le son",
+    "triggerTypes": {
+      "dps_threshold": "Seuil DPS",
+      "hps_threshold": "Seuil HPS",
+      "death": "Mort d'un joueur",
+      "aggro_warning": "Avertissement d'aggro",
+      "encounter_start": "Début du combat",
+      "encounter_end": "Fin du combat"
+    }
+  },
+  "timers": {
+    "title": "Minuteurs de sorts",
+    "noActiveTimers": "Aucun temps de recharge actif"
+  },
+  "collapsed": {
+    "label": "Overlay réduit"
+  },
+  "common": {
+    "close": "Fermer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "enabled": "Activé",
+    "disabled": "Désactivé"
+  }
+}

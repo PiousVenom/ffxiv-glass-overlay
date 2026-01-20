@@ -1,0 +1,150 @@
+/* =============================================
+   Spell/Cooldown Timer Styles
+   ============================================= */
+.spellTimers {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-top: 1px solid var(--border-glass);
+  background: var(--bg-secondary);
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.spellTimersEmpty {
+  composes: spellTimers;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm);
+  color: var(--text-tertiary);
+  font-size: var(--font-size-xs);
+  font-style: italic;
+}
+
+.spellTimer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-xs);
+  height: 22px;
+  background: var(--bg-glass);
+  border-radius: var(--border-radius-xs);
+  overflow: hidden;
+}
+
+.spellTimer:last-child {
+  margin-bottom: 0;
+}
+
+.spellTimerOwn {
+  composes: spellTimer;
+  border: 1px solid rgba(179, 102, 255, 0.3);
+}
+
+.timerProgress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0.4;
+  transition: width 0.2s linear;
+}
+
+.timerContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 var(--spacing-sm);
+  z-index: 1;
+}
+
+.timerName {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.timerNameOwn {
+  composes: timerName;
+  color: var(--accent-primary);
+}
+
+.timerCaster {
+  margin: 0 var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+.timerCasterOwn {
+  composes: timerCaster;
+  color: var(--accent-primary);
+}
+
+.timerRemaining {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent-secondary);
+}
+
+/* Scrollbar */
+.spellTimers::-webkit-scrollbar {
+  width: 4px;
+}
+
+.spellTimers::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.spellTimers::-webkit-scrollbar-thumb {
+  background: rgba(179, 102, 255, 0.3);
+  border-radius: 2px;
+}
+
+/* Theme overrides */
+:global(.overlay-container.theme-light) .spellTimers,
+:global(.overlay-container.theme-light) .spellTimersEmpty {
+  background: rgba(0, 0, 0, 0.03);
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+:global(.overlay-container.theme-light) .spellTimer,
+:global(.overlay-container.theme-light) .spellTimerOwn {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+:global(.overlay-container.theme-light) .timerName {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+:global(.overlay-container.theme-light) .timerCaster {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+:global(.overlay-container.theme-light) .timerRemaining {
+  color: #0891b2;
+}
+
+:global(.overlay-container.theme-light) .spellTimerOwn {
+  border-color: rgba(124, 58, 237, 0.3);
+}
+
+:global(.overlay-container.theme-light) .timerNameOwn,
+:global(.overlay-container.theme-light) .timerCasterOwn {
+  color: #7c3aed;
+}
+
+:global(.overlay-container.theme-dark) .spellTimers,
+:global(.overlay-container.theme-dark) .spellTimersEmpty {
+  background: rgba(20, 20, 30, 0.5);
+}
+
+:global(.overlay-container.theme-dark) .spellTimer,
+:global(.overlay-container.theme-dark) .spellTimerOwn {
+  background: rgba(30, 30, 40, 0.6);
+}

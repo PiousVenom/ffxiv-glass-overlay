@@ -1,0 +1,124 @@
+/* =============================================
+   Header Component Styles
+   ============================================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border-bottom: 1px solid var(--border-glass);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  position: relative;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  pointer-events: none;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: var(--accent-gradient);
+  opacity: 0.5;
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.encounterInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.encounterName {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.encounterDuration {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-variant-numeric: tabular-nums;
+}
+
+.totalDps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.label {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.raidDpsValue {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--accent-secondary);
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
+}
+
+/* Theme overrides */
+:global(.overlay-container.theme-dark) .header {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+}
+
+:global(.overlay-container.theme-dark) .header::before {
+  display: none;
+}
+
+:global(.overlay-container.theme-dark) .raidDpsValue {
+  text-shadow: none;
+}
+
+:global(.overlay-container.theme-light) .header {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+}
+
+:global(.overlay-container.theme-light) .header::before {
+  display: none;
+}
+
+:global(.overlay-container.theme-light) .raidDpsValue {
+  color: var(--accent-primary);
+  text-shadow: none;
+}
+
+:global(.overlay-container.theme-light) .encounterDuration {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

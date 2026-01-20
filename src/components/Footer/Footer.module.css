@@ -1,0 +1,121 @@
+/* =============================================
+   Footer Component Styles
+   ============================================= */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: linear-gradient(0deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border-top: 1px solid var(--border-glass);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.roleTabs {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.roleTab {
+  padding: 4px 8px;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-xs);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.roleTab:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--border-glass);
+}
+
+.roleTabActive {
+  composes: roleTab;
+  color: var(--accent-primary);
+  background: rgba(179, 102, 255, 0.2);
+  border-color: var(--border-accent);
+  box-shadow: 0 0 12px rgba(179, 102, 255, 0.3);
+}
+
+.controls {
+  display: flex;
+  gap: var(--spacing-xs);
+  margin-right: 20px;
+}
+
+.controlBtn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-xs);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.controlBtn:hover {
+  color: var(--accent-secondary);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--border-glass);
+}
+
+/* Footer Top Position */
+:global(.overlay-container.footer-top) .footer {
+  border-top: none;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+/* Theme overrides */
+:global(.overlay-container.theme-dark) .footer {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+}
+
+:global(.overlay-container.theme-dark) .footer::before {
+  display: none;
+}
+
+:global(.overlay-container.theme-dark) .roleTabActive {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: var(--border-accent);
+  box-shadow: none;
+}
+
+:global(.overlay-container.theme-light) .footer {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+}
+
+:global(.overlay-container.theme-light) .footer::before {
+  display: none;
+}
+
+:global(.overlay-container.theme-light) .roleTabActive {
+  color: var(--accent-primary);
+  background: rgba(59, 130, 246, 0.1);
+  border-color: var(--border-accent);
+  box-shadow: none;
+}

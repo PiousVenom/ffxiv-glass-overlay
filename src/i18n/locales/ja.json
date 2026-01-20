@@ -1,0 +1,194 @@
+{
+  "header": {
+    "waiting": "戦闘データを待機中...",
+    "rdps": "rDPS",
+    "rhps": "rHPS",
+    "rtps": "rTPS"
+  },
+  "footer": {
+    "dps": "DPS",
+    "heal": "ヒール",
+    "tank": "タンク",
+    "raid": "レイド",
+    "aggro": "敵視",
+    "charts": "チャート",
+    "clearDisplay": "表示をクリア",
+    "settings": "設定",
+    "collapse": "折りたたむ",
+    "expand": "展開",
+    "history": "履歴"
+  },
+  "settings": {
+    "title": "設定",
+    "reset": "リセット",
+    "resetWindowSize": "ウィンドウをデフォルトサイズにリセット",
+    "timerHint": "スペルタイマーはバトルリタニー、テクニカルステップ、タンクの軽減などの主要なクールダウンを追跡します。タイマーは戦闘中にスキルが使用されるとプレイヤーリストの下に表示されます。LogLine購読が有効なACT OverlayPluginが必要です。",
+    "tabs": {
+      "general": "一般",
+      "dps": "DPS",
+      "heal": "ヒール",
+      "tank": "タンク",
+      "alerts": "アラート",
+      "timers": "タイマー"
+    },
+    "groups": {
+      "playerIdentity": "プレイヤー情報",
+      "appearance": "外観",
+      "display": "表示",
+      "behavior": "動作",
+      "numberFormatting": "数値フォーマット",
+      "columns": "カラム",
+      "alertSettings": "アラート設定",
+      "timerSettings": "タイマー設定",
+      "historySettings": "履歴設定"
+    },
+    "labels": {
+      "yourName": "あなたの名前",
+      "autoDetectName": "名前を自動検出",
+      "detected": "検出済み",
+      "theme": "テーマ",
+      "opacity": "不透明度",
+      "language": "言語",
+      "showJobIcons": "ジョブアイコンを表示",
+      "nameFormat": "名前の形式",
+      "blurNames": "名前をぼかす",
+      "layout": "レイアウト",
+      "footerPosition": "フッター位置",
+      "allowCollapse": "折りたたみを許可",
+      "decimalPrecision": "小数精度",
+      "thousandSeparator": "桁区切り",
+      "compactNumbers": "短縮表示",
+      "dmgPercent": "ダメージ %",
+      "healPercent": "回復 %",
+      "critPercent": "クリティカル %",
+      "directHitPercent": "ダイレクトヒット %",
+      "critDirectHitPercent": "クリティカル+DH %",
+      "maxHit": "最大ヒット",
+      "maxHeal": "最大回復",
+      "deaths": "死亡回数",
+      "overhealPercent": "オーバーヒール %",
+      "effectiveHPS": "有効HPS %",
+      "last30s": "直近30秒",
+      "last60s": "直近60秒",
+      "enableAlerts": "アラートを有効化",
+      "alertCooldown": "アラート間隔（秒）",
+      "enableTimers": "タイマーを有効化",
+      "showOwnCooldowns": "自分のクールダウンを表示",
+      "showPartyCooldowns": "パーティのクールダウンを表示",
+      "enableHistory": "履歴を有効化",
+      "maxHistoryEntries": "履歴の最大件数",
+      "autoSaveOnZoneChange": "ゾーン変更時に自動保存"
+    },
+    "options": {
+      "themes": {
+        "default": "デフォルト",
+        "dark": "ダーク",
+        "light": "ライト"
+      },
+      "nameFormats": {
+        "none": "フルネーム",
+        "first": "名",
+        "last": "姓",
+        "initials": "イニシャル"
+      },
+      "blurModes": {
+        "none": "ぼかしなし",
+        "all": "全ての名前をぼかす",
+        "others": "他プレイヤーのみぼかす"
+      },
+      "layouts": {
+        "vertical": "縦",
+        "horizontal": "横"
+      },
+      "footerPositions": {
+        "bottom": "下",
+        "top": "上"
+      },
+      "languages": {
+        "en": "英語",
+        "ja": "日本語",
+        "de": "ドイツ語",
+        "fr": "フランス語"
+      }
+    },
+    "hints": {
+      "compactNumbers": "例: 32,388 → 32k"
+    }
+  },
+  "playerDetail": {
+    "title": "プレイヤー詳細",
+    "stats": {
+      "damage": "総ダメージ",
+      "dps": "DPS",
+      "healing": "総回復",
+      "hps": "HPS",
+      "damageTaken": "被ダメージ",
+      "deaths": "死亡回数",
+      "critPercent": "クリティカル %",
+      "directHitPercent": "ダイレクトヒット %",
+      "critDirectHitPercent": "クリ+DH %",
+      "overheal": "オーバーヒール",
+      "overhealPercent": "オーバーヒール %",
+      "maxHit": "最大ヒット",
+      "maxHeal": "最大回復"
+    },
+    "charts": {
+      "dpsOverTime": "DPS推移",
+      "hpsOverTime": "HPS推移"
+    }
+  },
+  "history": {
+    "title": "戦闘履歴",
+    "noHistory": "履歴がありません",
+    "loadEncounter": "読み込む",
+    "deleteEncounter": "削除",
+    "saveCurrent": "現在の戦闘を保存",
+    "clearAll": "すべての履歴を削除",
+    "duration": "時間",
+    "zone": "ゾーン"
+  },
+  "aggro": {
+    "title": "敵視リスト",
+    "noTarget": "ターゲットなし",
+    "you": "あなた"
+  },
+  "alerts": {
+    "title": "アラートトリガー",
+    "noTriggers": "アラートトリガーが設定されていません",
+    "addTrigger": "トリガーを追加",
+    "noMessage": "（メッセージなし）",
+    "edit": "編集",
+    "player": "プレイヤー",
+    "playerSelf": "自分",
+    "playerAny": "全プレイヤー",
+    "ttsMessage": "TTSメッセージ",
+    "ttsMessagePlaceholder": "アラートメッセージ...",
+    "useTTS": "TTSを使用",
+    "soundFile": "サウンドファイル（任意）",
+    "soundFilePlaceholder": ".wavファイルのパス...",
+    "useSound": "サウンドを使用",
+    "triggerTypes": {
+      "dps_threshold": "DPS閾値",
+      "hps_threshold": "HPS閾値",
+      "death": "プレイヤー死亡",
+      "aggro_warning": "敵視警告",
+      "encounter_start": "戦闘開始",
+      "encounter_end": "戦闘終了"
+    }
+  },
+  "timers": {
+    "title": "スペルタイマー",
+    "noActiveTimers": "アクティブなクールダウンなし"
+  },
+  "collapsed": {
+    "label": "オーバーレイ折りたたみ中"
+  },
+  "common": {
+    "close": "閉じる",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "enabled": "有効",
+    "disabled": "無効"
+  }
+}

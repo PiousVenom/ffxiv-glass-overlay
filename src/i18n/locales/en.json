@@ -1,0 +1,199 @@
+{
+  "header": {
+    "waiting": "Waiting for combat data...",
+    "rdps": "rDPS",
+    "rhps": "rHPS",
+    "rtps": "rTPS"
+  },
+  "footer": {
+    "dps": "DPS",
+    "heal": "Heal",
+    "tank": "Tank",
+    "raid": "Raid",
+    "aggro": "Aggro",
+    "charts": "Charts",
+    "clearDisplay": "Clear Display",
+    "settings": "Settings",
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "history": "History"
+  },
+  "settings": {
+    "title": "Settings",
+    "reset": "Reset",
+    "resetWindowSize": "Reset window to default size",
+    "timerHint": "Spell timers track major cooldowns like Battle Litany, Technical Step, and tank mitigations. Timers appear below the player list when skills are used during combat. Requires ACT OverlayPlugin with LogLine subscription enabled.",
+    "tabs": {
+      "general": "General",
+      "dps": "DPS",
+      "heal": "Heal",
+      "tank": "Tank",
+      "alerts": "Alerts",
+      "timers": "Timers"
+    },
+    "groups": {
+      "playerIdentity": "Player Identity",
+      "appearance": "Appearance",
+      "display": "Display",
+      "behavior": "Behavior",
+      "numberFormatting": "Number Formatting",
+      "columns": "Columns",
+      "alertSettings": "Alert Settings",
+      "timerSettings": "Timer Settings",
+      "historySettings": "History Settings"
+    },
+    "labels": {
+      "yourName": "Your Name",
+      "autoDetectName": "Auto-Detect Name",
+      "detected": "Detected",
+      "theme": "Theme",
+      "opacity": "Opacity",
+      "language": "Language",
+      "showJobIcons": "Show Job Icons",
+      "nameFormat": "Name Format",
+      "blurNames": "Blur Names",
+      "layout": "Layout",
+      "footerPosition": "Footer Position",
+      "allowCollapse": "Allow Collapse",
+      "decimalPrecision": "Decimal Precision",
+      "thousandSeparator": "Thousand Separator",
+      "compactNumbers": "Compact Numbers",
+      "dmgPercent": "DMG %",
+      "healPercent": "Heal %",
+      "critPercent": "Crit %",
+      "directHitPercent": "Direct Hit %",
+      "critDirectHitPercent": "Crit Direct Hit %",
+      "maxHit": "Max Hit",
+      "maxHeal": "Max Heal",
+      "deaths": "Deaths",
+      "overhealPercent": "Overheal %",
+      "effectiveHPS": "Effective HPS %",
+      "last30s": "Last 30s",
+      "last60s": "Last 60s",
+      "enableAlerts": "Enable Alerts",
+      "alertCooldown": "Alert Cooldown (seconds)",
+      "enableTimers": "Enable Timers",
+      "showOwnCooldowns": "Show Own Cooldowns",
+      "showPartyCooldowns": "Show Party Cooldowns",
+      "enableHistory": "Enable History",
+      "maxHistoryEntries": "Max History Entries",
+      "autoSaveOnZoneChange": "Auto-Save on Zone Change"
+    },
+    "options": {
+      "themes": {
+        "default": "Default",
+        "dark": "Dark",
+        "light": "Light"
+      },
+      "nameFormats": {
+        "none": "Full Name",
+        "first": "First Name",
+        "last": "Last Name",
+        "initials": "Initials"
+      },
+      "blurModes": {
+        "none": "No Blur",
+        "all": "Blur All Names",
+        "others": "Blur Others Only"
+      },
+      "layouts": {
+        "vertical": "Vertical",
+        "horizontal": "Horizontal"
+      },
+      "footerPositions": {
+        "bottom": "Bottom",
+        "top": "Top"
+      },
+      "languages": {
+        "en": "English",
+        "ja": "Japanese",
+        "de": "German",
+        "fr": "French"
+      }
+    },
+    "hints": {
+      "compactNumbers": "e.g., 32,388 → 32k"
+    }
+  },
+  "playerDetail": {
+    "title": "Player Details",
+    "stats": {
+      "damage": "Total Damage",
+      "dps": "DPS",
+      "healing": "Total Healing",
+      "hps": "HPS",
+      "damageTaken": "Damage Taken",
+      "deaths": "Deaths",
+      "critPercent": "Crit %",
+      "directHitPercent": "Direct Hit %",
+      "critDirectHitPercent": "Crit+DH %",
+      "overheal": "Overheal",
+      "overhealPercent": "Overheal %",
+      "maxHit": "Max Hit",
+      "maxHeal": "Max Heal"
+    },
+    "charts": {
+      "dpsOverTime": "DPS Over Time",
+      "hpsOverTime": "HPS Over Time"
+    }
+  },
+  "history": {
+    "title": "Encounter History",
+    "noHistory": "No encounter history yet",
+    "loadEncounter": "Load",
+    "deleteEncounter": "Delete",
+    "saveCurrent": "Save Current Encounter",
+    "clearAll": "Clear All History",
+    "duration": "Duration",
+    "zone": "Zone"
+  },
+  "aggro": {
+    "title": "Enmity List",
+    "noTarget": "No target",
+    "you": "YOU"
+  },
+  "alerts": {
+    "title": "Alert Triggers",
+    "noTriggers": "No alert triggers configured",
+    "addTrigger": "Add Trigger",
+    "noMessage": "(no message)",
+    "edit": "Edit",
+    "player": "Player",
+    "playerSelf": "Self",
+    "playerAny": "Any Player",
+    "ttsMessage": "TTS Message",
+    "ttsMessagePlaceholder": "Alert message...",
+    "useTTS": "Use TTS",
+    "soundFile": "Sound File (optional)",
+    "soundFilePlaceholder": "Path to .wav file...",
+    "useSound": "Use Sound",
+    "triggerTypes": {
+      "dps_threshold": "DPS Threshold",
+      "hps_threshold": "HPS Threshold",
+      "death": "Player Death",
+      "aggro_warning": "Aggro Warning",
+      "encounter_start": "Encounter Start",
+      "encounter_end": "Encounter End"
+    }
+  },
+  "timers": {
+    "title": "Spell Timers",
+    "noActiveTimers": "No active cooldowns"
+  },
+  "charts": {
+    "selectPlayer": "Select Player",
+    "noPlayers": "No players in encounter",
+    "selectPlayerPrompt": "Select a player to view performance charts"
+  },
+  "collapsed": {
+    "label": "Overlay Collapsed"
+  },
+  "common": {
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "enabled": "Enabled",
+    "disabled": "Disabled"
+  }
+}
