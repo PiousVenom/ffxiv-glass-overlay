@@ -1,0 +1,200 @@
+{
+  "header": {
+    "waiting": "等待战斗数据...",
+    "rdps": "rDPS",
+    "rhps": "rHPS",
+    "rtps": "rTPS"
+  },
+  "footer": {
+    "dps": "DPS",
+    "heal": "治疗",
+    "tank": "坦克",
+    "raid": "Raid",
+    "aggro": "仇恨",
+    "charts": "图表",
+    "clearDisplay": "清空",
+    "settings": "设置",
+    "collapse": "收起",
+    "expand": "展开",
+    "history": "历史记录"
+  },
+  "settings": {
+    "title": "设置",
+    "reset": "重置",
+    "resetWindowSize": "重置为默认大小",
+    "timerHint": "技能计时器用于追踪重要冷却技能，如战斗连祷、技巧舞步以及坦克减伤技能。当技能在战斗中被使用时，计时器会显示在玩家列表下方。需要 ACT OverlayPlugin 并启用 LogLine 订阅功能。",
+    "tabs": {
+      "general": "常规",
+      "dps": "DPS",
+      "heal": "治疗",
+      "tank": "坦克",
+      "alerts": "警报",
+      "timers": "计时器"
+    },
+    "groups": {
+      "playerIdentity": "玩家身份",
+      "appearance": "外观",
+      "display": "显示",
+      "behavior": "行为",
+      "numberFormatting": "数字格式",
+      "columns": "列",
+      "alertSettings": "警报设置",
+      "timerSettings": "计时器设置",
+      "historySettings": "历史记录设置"
+    },
+    "labels": {
+      "yourName": "角色名称",
+      "autoDetectName": "自动检测角色名",
+      "detected": "已检测",
+      "theme": "主题",
+      "opacity": "透明度",
+      "language": "语言",
+      "showJobIcons": "显示职业图标",
+      "nameFormat": "名称格式",
+      "blurNames": "模糊名称",
+      "layout": "布局",
+      "footerPosition": "页脚位置",
+      "allowCollapse": "允许收起",
+      "decimalPrecision": "小数精度",
+      "thousandSeparator": "千位分隔符",
+      "compactNumbers": "简写数字",
+      "dmgPercent": "伤害%",
+      "healPercent": "治疗%",
+      "critPercent": "暴击%",
+      "directHitPercent": "直击%",
+      "critDirectHitPercent": "直暴%",
+      "maxHit": "最高伤害",
+      "maxHeal": "最高治疗",
+      "deaths": "死亡",
+      "overhealPercent": "过量治疗%",
+      "effectiveHPS": "有效HPS%",
+      "last30s": "最近30秒",
+      "last60s": "最近60秒",
+      "enableAlerts": "启用警报",
+      "alertCooldown": "警报冷却时间(秒)",
+      "enableTimers": "启用计时器",
+      "showOwnCooldowns": "显示自身冷却",
+      "showPartyCooldowns": "显示小队冷却",
+      "enableHistory": "启用历史记录",
+      "maxHistoryEntries": "最大历史条目",
+      "autoSaveOnZoneChange": "区域变更时自动保存"
+    },
+    "options": {
+      "themes": {
+        "default": "默认",
+        "dark": "暗色",
+        "light": "亮色"
+      },
+      "nameFormats": {
+        "none": "全名",
+        "first": "First Name",
+        "last": "Last Name",
+        "initials": "首字母"
+      },
+      "blurModes": {
+        "none": "不模糊",
+        "all": "全部模糊",
+        "others": "仅模糊他人"
+      },
+      "layouts": {
+        "vertical": "垂直",
+        "horizontal": "水平"
+      },
+      "footerPositions": {
+        "bottom": "底部",
+        "top": "顶部"
+      },
+      "languages": {
+        "en": "英语",
+        "ja": "日语",
+        "de": "德语",
+        "fr": "法语",
+        "cn": "简体中文"
+      }
+    },
+    "hints": {
+      "compactNumbers": "例如: 32,388 → 32k"
+    }
+  },
+  "playerDetail": {
+    "title": "玩家详情",
+    "stats": {
+      "damage": "总伤害",
+      "dps": "DPS",
+      "healing": "总治疗",
+      "hps": "HPS",
+      "damageTaken": "承伤",
+      "deaths": "死亡",
+      "critPercent": "暴击%",
+      "directHitPercent": "直击%",
+      "critDirectHitPercent": "直暴%",
+      "overheal": "过量治疗",
+      "overhealPercent": "过量治疗%",
+      "maxHit": "最高伤害",
+      "maxHeal": "最高治疗"
+    },
+    "charts": {
+      "dpsOverTime": "DPS 时间线",
+      "hpsOverTime": "HPS 时间线"
+    }
+  },
+  "history": {
+    "title": "战斗历史",
+    "noHistory": "暂无战斗历史",
+    "loadEncounter": "加载",
+    "deleteEncounter": "删除",
+    "saveCurrent": "保存当前战斗",
+    "clearAll": "清除全部历史",
+    "duration": "持续时间",
+    "zone": "区域"
+  },
+  "aggro": {
+    "title": "敌方列表",
+    "noTarget": "无目标",
+    "you": "你"
+  },
+  "alerts": {
+    "title": "警报触发器",
+    "noTriggers": "未配置警报触发器",
+    "addTrigger": "添加触发器",
+    "noMessage": "(无信息)",
+    "edit": "编辑",
+    "player": "玩家",
+    "playerSelf": "自身",
+    "playerAny": "任何玩家",
+    "ttsMessage": "TTS 消息",
+    "ttsMessagePlaceholder": "警报消息...",
+    "useTTS": "使用 TTS",
+    "soundFile": "音效文件 (可选)",
+    "soundFilePlaceholder": ".wav文件路径...",
+    "useSound": "使用音效",
+    "triggerTypes": {
+      "dps_threshold": "DPS 阈值",
+      "hps_threshold": "HPS 阈值",
+      "death": "玩家死亡",
+      "aggro_warning": "仇恨警告",
+      "encounter_start": "战斗开始",
+      "encounter_end": "战斗结束"
+    }
+  },
+  "timers": {
+    "title": "技能计时器",
+    "noActiveTimers": "暂无冷却技能"
+  },
+  "charts": {
+    "selectPlayer": "选择玩家",
+    "noPlayers": "战斗中暂无玩家",
+    "selectPlayerPrompt": "选择玩家查看详细图表"
+  },
+  "collapsed": {
+    "label": "悬浮窗已收起"
+  },
+  "common": {
+    "close": "关闭",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "enabled": "启用",
+    "disabled": "禁用"
+  }
+}
