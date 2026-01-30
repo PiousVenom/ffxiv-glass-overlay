@@ -92,6 +92,7 @@ export function GeneralSettings({
       { value: 'ja', label: t('settings.options.languages.ja') },
       { value: 'de', label: t('settings.options.languages.de') },
       { value: 'fr', label: t('settings.options.languages.fr') },
+      { value: 'cn', label: t('settings.options.languages.cn') },
     ],
     [t]
   );

@@ -6,7 +6,7 @@ export type ThemeType = 'default' | 'dark' | 'light';
 export type BlurMode = 'none' | 'all' | 'others';
 export type FooterPosition = 'bottom' | 'top';
 export type LayoutMode = 'vertical' | 'horizontal';
-export type Language = 'en' | 'ja' | 'de' | 'fr';
+export type Language = 'en' | 'ja' | 'de' | 'fr' | 'cn';
 
 // View constants for type-safe usage
 export const VIEW = {
