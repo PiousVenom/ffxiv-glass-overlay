@@ -30,6 +30,7 @@ function App() {
   const { t } = useTranslation();
 
   // Core state
+  // TODO: Test
   const [combatData, setCombatData] = useState<RawCombatData | null>(null);
   const [currentView, setCurrentView] = useState<ViewType>(VIEW.DPS);
   const [showSettings, setShowSettings] = useState(false);
