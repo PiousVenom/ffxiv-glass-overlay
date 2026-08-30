@@ -1,15 +1,15 @@
 {
   "header": {
     "waiting": "等待战斗数据...",
-    "rdps": "rDPS",
-    "rhps": "rHPS",
-    "rtps": "rTPS"
+    "rdps": "团队输出",
+    "rhps": "团队治疗",
+    "rtps": "团队承伤"
   },
   "footer": {
-    "dps": "DPS",
+    "dps": "输出",
     "heal": "治疗",
-    "tank": "坦克",
-    "raid": "Raid",
+    "tank": "承伤",
+    "raid": "团队",
     "aggro": "仇恨",
     "charts": "图表",
     "clearDisplay": "清空",
@@ -25,9 +25,9 @@
     "timerHint": "技能计时器用于追踪重要冷却技能，如战斗连祷、技巧舞步以及坦克减伤技能。当技能在战斗中被使用时，计时器会显示在玩家列表下方。需要 ACT OverlayPlugin 并启用 LogLine 订阅功能。",
     "tabs": {
       "general": "常规",
-      "dps": "DPS",
+      "dps": "输出",
       "heal": "治疗",
-      "tank": "坦克",
+      "tank": "承伤",
       "alerts": "警报",
       "timers": "计时器"
     },
