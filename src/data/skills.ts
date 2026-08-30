@@ -59,11 +59,13 @@ export const SKILLS: Record<number, SkillDefinition> = {
   16553: { id: 16553, name: 'Earthly Star', cooldown: 60, job: 'AST' },
 
   // Sage
-  24285: { id: 24285, name: 'Haima', cooldown: 120, job: 'SGE' },
-  24286: { id: 24286, name: 'Panhaima', cooldown: 120, job: 'SGE' },
-  24298: { id: 24298, name: 'Holos', cooldown: 120, job: 'SGE' },
-  24302: { id: 24302, name: 'Pneuma', cooldown: 120, job: 'SGE' },
-  24304: { id: 24304, name: 'Kerachole', cooldown: 30, job: 'SGE' },
+  24298: { id: 24298, name: 'Kerachole', cooldown: 30, job: 'SGE' },
+  24302: { id: 24302, name: 'Physis II', cooldown: 60, job: 'SGE' },
+  24303: { id: 24303, name: 'Taurochole', cooldown: 45, job: 'SGE' },
+  24305: { id: 24305, name: 'Haima', cooldown: 120, job: 'SGE' },
+  24310: { id: 24310, name: 'Holos', cooldown: 120, job: 'SGE' },
+  24311: { id: 24311, name: 'Panhaima', cooldown: 120, job: 'SGE' },
+  24318: { id: 24318, name: 'Pneuma', cooldown: 120, job: 'SGE' },
 
   // ===============================
   // DPS Raid Buffs
