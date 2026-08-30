@@ -2,6 +2,8 @@
 
 A sleek, modern DPS overlay for Final Fantasy XIV inspired by Apple's Liquid Glass (inspired, not replicating). Built for use with [OverlayPlugin](https://github.com/OverlayPlugin/OverlayPlugin) and Advanced Combat Tracker (ACT).
 
+**Hosted overlay:** `https://piousvenom.github.io/ffxiv-glass-overlay/` (paste this URL into OverlayPlugin). It looks blank in a normal browser; the overlay only renders once ACT sends it combat data.
+
 ## Preview
 
 ![preview.png](docs/images/preview.png)
@@ -45,7 +47,7 @@ A sleek, modern DPS overlay for Final Fantasy XIV inspired by Apple's Liquid Gla
 1. In ACT, go to **Plugins** → **OverlayPlugin.dll**
 2. Click **New** to create a new overlay
 3. Select **Mini Parse** as the preset
-4. Set the overlay URL to the hosted version or your local build path
+4. Set the overlay URL to `https://piousvenom.github.io/ffxiv-glass-overlay/` (or your local build path, see [Local Installation](#local-installation) below)
 5. Adjust the overlay size and position to your preference
 6. Enable **Click-through** if you want the overlay to not interfere with gameplay
 
