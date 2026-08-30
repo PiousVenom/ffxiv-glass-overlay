@@ -4,11 +4,7 @@ A sleek, modern DPS overlay for Final Fantasy XIV inspired by Apple's Liquid Gla
 
 **Hosted overlay:** `https://piousvenom.github.io/ffxiv-glass-overlay/` (paste this URL into OverlayPlugin). It looks blank in a normal browser; the overlay only renders once ACT sends it combat data.
 
-## Preview
-
-![preview.png](docs/images/preview.png)
-
-### Themes
+## Themes
 
 | Default | Dark | Light |
 |---------|------|-------|
