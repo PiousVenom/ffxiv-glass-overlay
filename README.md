@@ -26,7 +26,7 @@ A sleek, modern DPS overlay for Final Fantasy XIV inspired by Apple's Liquid Gla
   - Privacy blur mode for streaming
 - **TTS Alerts** - Text-to-speech notifications for combat events (death alerts, DPS thresholds, aggro warnings)
 - **Spell Timers** - Track party cooldowns and raid buffs with visual timers
-- **Localization** - Available in English, Japanese, German, and French
+- **Localization** - Available in English, Japanese, German, French, and Simplified Chinese
 - **Real-time Stats** - DPS, HPS, damage taken with percentage breakdowns
 - **Responsive Design** - Resizable overlay that fits in any corner of your screen
 - **Persistent Settings** - Your preferences are saved locally
@@ -102,7 +102,7 @@ Click the gear icon (⚙️) in the footer to access settings. Settings open in 
 |----------------|-----------------------------------------------|
 | Your Name      | Your character name (displays as "YOU")       |
 | Auto-detect    | Automatically detect player name from game    |
-| Language       | UI language (English, Japanese, German, French) |
+| Language       | UI language (English, Japanese, German, French, Simplified Chinese) |
 | Theme          | Visual theme (Default, Dark, Light)           |
 | Opacity        | Overlay transparency level                    |
 
